@@ -1,0 +1,22 @@
+#include<stdio.h>
+float newton(float n)
+{       float x1=n/2;
+	float x2=(x1+(n/x1))/2;
+	while((x1-x2)>=0.00000001)
+        { 
+		x1=x2;
+                x2=(x1+(n/x1))/2;
+	}        
+	return x2;
+}
+void main()
+{
+	float n;
+	printf("Enter the number\n");
+	scanf("%f",&n);
+        float c =newton(n);
+	printf("The square root of the number is\n");
+	printf("%f",c);
+}
+		
+	
