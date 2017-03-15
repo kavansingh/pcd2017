@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<math.h>
+float square(float n)
+{
+	float q = sqrt(n);
+        return q;
+}
+void main()
+{
+	float n;
+	printf("Enter the number\n");
+	scanf("%f",&n);
+	float c = square(n);
+	printf("The square root of the number is");
+	printf("%f",c);
+}
+
+	
